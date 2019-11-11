@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shape</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo3.png" alt="shape logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/logo.svg" alt="server graphic" class="server">
+            
+            <h1>Shape Welcomes You!</h1>
+            <p class="subhead">Join us and enjoy your healthy life.</p>
+
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <div class="red-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon.svg" alt="fitness icon">
+                    <p>Tailored fitness tutorials and healthy recipes, which can hlep you find the fitness method that suit you best. </p>
+                </li>
+                <li>
+                    <img src="images/fitness.svg" alt="fitness icon">
+                    <p>A variety of fitness modes can be selected, increase the fun of sports, making everyone fall in love with sports.</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="fitness icon">
+                    <p>A variety of online activities are provided, just come and meet more like-minded friends and make exercise more fun.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/yoga.png" alt="weightloss picture">
+                        <blockquote>Weight loss special fitness tutorials and recipes, specifically for people with weight loss.</blockquote>
+                        <figcaption>- Weight loss</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="User testimonial picture">
+                        <blockquote>In this mode, recip and fitness tutorials designed specifically for fitness professionals.</blockquote>
+                        <figcaption>- Professional fitness</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Start your free trial now!</h2>
+        <a href="sign_in.html" class="cta">Get Started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo.png" class="logo" alt="logo">
+                </a>
+                <p class="address">Darlington, Sydney<br>NSW</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+</html>
